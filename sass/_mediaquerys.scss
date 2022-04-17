@@ -1,0 +1,33 @@
+
+
+@media(max-width:576px){
+    .calc{
+        width: 90%;
+        .theme-container{
+            .theme-text{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .table{
+        padding: 2rem;
+        .table-container{
+            gap: 1.2rem;
+            .key{
+                min-width: auto;
+                font-size: 2.5rem;
+            }
+        }
+    }
+    .numb-input{
+        min-height: 13vh;
+        .numb-input-container{
+            .result{
+                max-width: 100%;
+                font-size: 2.5rem;
+                
+            }
+        }
+    }     
+        
+}

@@ -1,0 +1,43 @@
+@import './mixxins';
+@import './variables';
+
+.table{
+    background-color:$toggle-bg-1;
+    border-radius: 1rem;
+    padding: 3rem;
+    .table-container{
+        @include grid(4,3rem);
+        .key{
+            height: 6rem;
+            min-width: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: $number-bg-1;
+            border-radius: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+           
+        }
+        .key-math{
+            border-bottom: 5px solid $number-shadow-1;
+        }
+        .reset{
+            grid-column: 1/3;
+        }
+        .equals{
+            grid-column: 3/5;
+            background-color: $igual-bg-1;
+            border-bottom: 5px solid $igual-shadow-1;
+            color: white;
+        }
+        .rst-del{
+            color: $white;
+            background-color: $del-rst-bg-1;
+            border-bottom: 5px solid $del-rst-shadow-1;
+        }
+    }
+
+}
