@@ -2,7 +2,7 @@
 @import './variables';
 
 .table{
-    background-color:$toggle-bg-1;
+   
     border-radius: 1rem;
     padding: 3rem;
     .table-container{
@@ -15,29 +15,72 @@
             align-items: center;
             text-align: center;
             text-transform: uppercase;
-            background-color: $number-bg-1;
             border-radius: 1rem;
             font-weight: bold;
             cursor: pointer;
            
         }
-        .key-math{
+        .key-theme-1{
             border-bottom: 5px solid $number-shadow-1;
+            background-color: $number-bg-1;
+            color: $number-color-1;
+        }
+        .key-theme-2{
+            border-bottom: 5px solid $number-shadow-2;
+            background-color: $number-bg-2;
+            color: $number-color-2;
+        }
+        .key-theme-3{
+            border-bottom: 5px solid $number-shadow-3;
+            background-color: $number-bg-3;
+            color: $number-color-3;
         }
         .reset{
             grid-column: 1/3;
         }
         .equals{
             grid-column: 3/5;
-            background-color: $igual-bg-1;
+            
+        }
+        .equals-theme-1{
             border-bottom: 5px solid $igual-shadow-1;
+            background-color: $igual-bg-1;
             color: white;
         }
-        .rst-del{
+        .equals-theme-2{
+            border-bottom: 5px solid $igual-shadow-2;
+            background-color: $igual-bg-2;
+            color: white;
+        }
+        .equals-theme-3{
+            border-bottom: 5px solid $igual-shadow-3;
+            background-color: $igual-bg-3;
+            color: $main-bg-3;
+        }
+        .rst-del-theme-1{
             color: $white;
             background-color: $del-rst-bg-1;
             border-bottom: 5px solid $del-rst-shadow-1;
         }
+        .rst-del-theme-2{
+            color: $white;
+            background-color: $del-rest-bg-2;
+            border-bottom: 5px solid $del-rst-shadow-2;
+        }
+        .rst-del-theme-3{
+            color: $white;
+            background-color: $del-rest-bg-3;
+            border-bottom: 5px solid $del-rst-shadow-3;
+        }
     }
 
+}
+.table-theme-1{
+    background-color:$toggle-bg-1;
+}
+.table-theme-2{
+    background-color:$toggle-bg-2;
+}
+.table-theme-3{
+    background-color:$toggle-bg-3;
 }

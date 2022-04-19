@@ -14,7 +14,16 @@ html{
     font-family: $font-main;
     font-size: $font-size;
     @include flex(column,center,center);
+    
+}
+.body-theme-1{
     background-color: $main-bg-1;
+}
+.body-theme-2{
+    background-color: $main-bg-2;
+}
+.body-theme-3{
+    background-color: $main-bg-3;
 }
 .container {
     width: 95%;

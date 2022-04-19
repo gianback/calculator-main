@@ -1,9 +1,9 @@
 @import './mixxins';
 @import './variables';
 
-.calc-header{
+.calc-header {
     @include flex(row,space-between,center);
-    color: $white;
+    
     .calc-title{
         align-self: flex-end;
     }
@@ -17,7 +17,7 @@
                 font-size: 1.6rem;
             }
             .ball-container{
-                background-color: $toggle-bg-1;
+          
                 border-radius: 10rem;
                 padding:.5rem .5rem;
                 width: 10rem;
@@ -29,22 +29,49 @@
                     width: 2rem;
                     height: 2rem;
                     border-radius: 50%;
-                    
-                    transform: translateX(0);
-                    //transform: translateX(160%);
-                    //transform: translateX(350%);
+                
                 }
+                .ball-theme-1{
+                    background-color: $igual-bg-1;
+                    transform: translateX(0);
+                }
+                .ball-theme-2{
+                    background-color: $igual-bg-1;
+                    transform: translateX(160%);
+                }
+                .ball-theme-3{
+                    background-color: $igual-bg-3;
+                    transform: translateX(350%);
+                }
+                
             }
-        
-        .theme-text{
-            align-self: flex-end;
-            text-transform: uppercase;
-            font-size: 2.6rem;
-            font-weight: 400;
-            letter-spacing: .2rem;
-        }
+            .ball-cont-theme-1{
+                background-color: $toggle-bg-1;
+            }
+            .ball-cont-theme-2{
+                background-color: $toggle-bg-2;
+            }
+            .ball-cont-theme-3{
+                background-color: $toggle-bg-3;
+            }
+            .theme-text{
+                align-self: flex-end;
+                text-transform: uppercase;
+                font-size: 2.6rem;
+                font-weight: 400;
+                letter-spacing: .2rem;
+            }
 
 
        
     }
+}
+.calc-header-theme-1{
+    color: $white;
+}
+.calc-header-theme-2{
+    color: black;
+}
+.calc-header-theme-3{
+    color: $number-color-3;
 }

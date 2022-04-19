@@ -2,8 +2,6 @@
 @import './mixxins';
 .numb-input{
     height: 13vh;
-    background-color: $result-bg-1;
-    color: $white;
     border-radius: 1rem;
     padding: 2rem;
     margin: 3rem 0;
@@ -27,4 +25,16 @@
           
         }
     }
-}       
+}
+.numb-input-theme-1{
+    background-color: $result-bg-1;
+    color: $white;
+}
+.numb-input-theme-2{
+    background-color: $result-bg-2;
+    color: $number-color-2;
+}
+.numb-input-theme-3{
+    background-color: $toggle-bg-3;
+    color: $number-color-3;
+}

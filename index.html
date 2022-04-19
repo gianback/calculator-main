@@ -9,15 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/custom.css">
-  <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>Calculator app</title>
 
 </head>
-<body class="body">
+<body class="body body-theme-1">
     <main class="calc">
 
-      <div class="calc-header">
+      <div class="calc-header calc-header-theme-1">
         <h1 class="calc-title">calc</h1>
         <div class="theme-container">
           <span class="theme-text">Theme</span>
@@ -29,8 +27,8 @@
               <span>3</span>
             </div>
 
-            <div class="ball-container">
-              <div class="ball">
+            <div class="ball-container ball-cont-theme-1">
+              <div class="ball ball-theme-1">
               </div>
             </div>
 
@@ -38,35 +36,35 @@
         </div>
       </div>
 
-      <div class="numb-input">
+      <div class="numb-input numb-input-theme-1">
 
-        <div class="numb-input-container">
+        <div class="numb-input-container ">
           <p class="result-prev"></p>
-          <p class="result"></p>
+          <p class="result">0</p>
         </div>
 
       </div>
 
-      <div class="table"> 
+      <div class="table table-theme-1"> 
         <div class="table-container">
-            <div class="key key-math number">7</div>
-            <div class="key key-math number">8</div>
-            <div class="key key-math number">9</div>
-            <div class="key delete rst-del ">del</div>
-            <div class="key key-math number">4</div>
-            <div class="key key-math number">5</div>
-            <div class="key key-math number">6</div>
-            <div class="key key-math sign">+</div>
-            <div class="key key-math number">1</div>
-            <div class="key key-math number">2</div>
-            <div class="key key-math number">3</div>
-            <div class="key key-math sign">-</div>
-            <div class="key key-math number">.</div>
-            <div class="key key-math number">0</div>
-            <div class="key key-math sign">/</div>
-            <div class="key key-math sign">*</div>
-            <div class="key reset rst-del">reset</div>
-            <div class="key equals sign-equals">=</div>
+            <div class="key key-op key-theme-1 number">7</div>
+            <div class="key key-op key-theme-1 number">8</div>
+            <div class="key key-op key-theme-1 number">9</div>
+            <div class="key delete rst-del-theme-1" id="del-btn">del</div>
+            <div class="key key-op key-theme-1 number">4</div>
+            <div class="key key-op key-theme-1 number">5</div>
+            <div class="key key-op key-theme-1 number">6</div>
+            <div class="key key-op key-theme-1 sign">+</div>
+            <div class="key key-op key-theme-1 number">1</div>
+            <div class="key key-op key-theme-1 number">2</div>
+            <div class="key key-op key-theme-1 number">3</div>
+            <div class="key key-op key-theme-1 sign">-</div>
+            <div class="key key-op key-theme-1 number">.</div>
+            <div class="key key-op key-theme-1 number">0</div>
+            <div class="key key-op key-theme-1 sign">/</div>
+            <div class="key key-op key-theme-1 sign">*</div>
+            <div class="key reset rst-del-theme-1" id="reset-btn">reset</div>
+            <div class="key equals sign-equals equals-theme-1" id="equals-btn">=</div>
            
         </div>
 
