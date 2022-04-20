@@ -6,10 +6,27 @@ const d = document;
 let resultTop =  d.querySelector('.result-prev');
 let result =  d.querySelector('.result');
 let id = 1;
-/* if(result.textContent.length < 1){
-    result.textContent = '0'
-} */
 
+d.addEventListener('DOMContentLoaded', () =>{
+    if(localStorage.getItem('theme') === null){
+        setTheme1();
+    }else{
+        
+        if(JSON.parse(localStorage.getItem('theme')) === 1){
+            setTheme1()
+            id = 1;
+          
+        }else if(JSON.parse(localStorage.getItem('theme')) === 2){
+            setTheme2();
+            id = 2;
+        }else if(JSON.parse(localStorage.getItem('theme')) === 3){
+            id= 3;
+            setTheme3()
+        }
+    }
+   
+    
+})
 d.addEventListener('click', e => {
     if(e.target.matches('.number')){
         if(result.textContent == '0'){
@@ -83,18 +100,28 @@ d.addEventListener('click', e => {
 
     if(e.target.matches('.ball-container') || e.target.matches('.ball')){
         id++;
-        switch(id){
-            case 2:
-                setTheme2();
-                break;
-            case 3:
-                setTheme3();
-                break;
-            case 4:
-                id = 1;
-                setTheme1();
-                break;
+        
+            switch(id){
+                case 2:
+                    setTheme2();
+                    localStorage.setItem('theme',JSON.stringify(id))
+                    
+                    break;
+                case 3:
+                    setTheme3();
+                    localStorage.setItem('theme',JSON.stringify(id))
+                  
+                    break;
+                case 4:
+                    id = 1;
+                    setTheme1();
+                    localStorage.setItem('theme',JSON.stringify(id))
+                    
+                    break;
+            
         }
+        
+      
     }
 })
 
