@@ -69,13 +69,17 @@ d.addEventListener("click", (e) => {
     }
   }
   if (e.target.matches("#equals-btn")) {
-    console.log(resultTop.textContent);
     if (
-      resultTop.textContent.charAt(-1) === "*" ||
-      resultTop.textContent.charAt(-1) === "/"
+      resultTop.textContent.split("").at(-1) === "*" ||
+      resultTop.textContent.split("").at(-1) === "/"
     ) {
-      resultTop.textContent += "1";
-      console.log(resultTop.textContent);
+      if (result.textContent === "0") {
+        resultTop.textContent += "1";
+        result.textContent = eval(resultTop.textContent);
+        resultTop.textContent = "";
+        return;
+      }
+      resultTop.textContent += result.textContent;
       result.textContent = eval(resultTop.textContent);
       resultTop.textContent = "";
     } else {
